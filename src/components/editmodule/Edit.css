@@ -1,0 +1,89 @@
+.edit{  
+    position: relative; 
+    z-index: 1;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 400px;
+    height: 560px;
+    background-color: rgba(34, 166, 210, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    border: 2px solid aqua;
+    position: absolute;
+    padding: 40px;
+   left: 800px;
+   top: -100%;
+   transition: 1s;
+   form{
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h4{
+            color: white;
+        }
+    }
+    input{
+        width: 100%;
+        max-width:400px;
+        outline: none;
+        border: none;
+        border: 2px solid aqua;
+        padding: 15px 30px;
+        border-radius: 5px;
+    }
+    select{
+        width: 100%;
+        max-width: 400px;
+        outline: none;
+        border: none;
+        border: 2px solid aqua;
+        padding: 12px 30px;
+        border-radius: 5px;
+    }
+   }
+   .edit__btn{
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;
+    color: white;
+    padding: 15px 30px;
+    opacity: 0.5;
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+    font-size: 16px;
+    transition: 0.5s;
+   }
+   .edit__btn:hover{
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    max-width: 200px;
+    font-size: 20px;
+    opacity: 1;
+   }
+}
+.edit.show{
+  top: 100px;
+}
+.edit__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 18px;
+    border: none;
+    transition: 0.5s;
+}
+.edit__img:hover{
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
