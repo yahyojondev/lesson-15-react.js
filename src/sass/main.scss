@@ -1,0 +1,25 @@
+.dark__logo,
+.light__logo {
+  font-size: 40px;
+  color: white;
+}
+.darkMode__btn {
+  border-radius: 10px;
+  border: none;
+  opacity: none;
+  background: dodgerblue;
+  display: flex;
+  justify-content: flex-end;
+}
+.light__logo {
+  color: yellow;
+}
+.dark {
+  background-color: #222;
+  z-index: 999;
+  color: white;
+}
+.app {
+  height: 100vh;
+  z-index: 99999;
+}
